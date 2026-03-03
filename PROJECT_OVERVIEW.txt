@@ -1,0 +1,27 @@
+ELOTS Preview — Project Overview
+
+Location:
+c:\Users\user\Desktop\Work\ELOTS LTD\ELOTS Preview
+
+Summary:
+This repository is a small static preview site that uses Tailwind CSS for styling.
+
+Key files:
+- index.html — main HTML entry for the site.
+- package.json — project metadata; likely contains devDependencies and scripts for building or watching Tailwind/CSS.
+- styles.css — compiled output CSS used by the site.
+- tailwind.config.js — Tailwind CSS configuration (custom theme, content paths, plugins).
+- src/input.css — source CSS with Tailwind directives (e.g., @tailwind base; @tailwind components; @tailwind utilities;).
+
+How it likely works:
+- Development flow: edit src/input.css and index.html; run the Tailwind build/watch script from package.json to produce styles.css.
+- Common commands (if scripts exist): npm install then npm run dev or npm run build.
+- If no npm scripts are present, Tailwind can be built manually, e.g.:
+  npx tailwindcss -i src/input.css -o styles.css --watch
+
+Notes & suggestions:
+- This is a static project — opening index.html in a browser will show the preview, but serving it via a simple static server (e.g., npx serve or npx http-server) is recommended for testing relative assets.
+- Open package.json to confirm exact scripts and dependencies.
+- Consider adding a README.md with setup/run instructions and a .gitignore if missing.
+
+End of overview.

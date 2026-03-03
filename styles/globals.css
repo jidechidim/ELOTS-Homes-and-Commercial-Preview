@@ -1,0 +1,100 @@
+/* Google Fonts (Source Sans Pro) */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles copied from src/input.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #2563eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/heroimage.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Shared CTA styles */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-1px);
+}
+
+.cta-btn:active {
+  transform: translateY(0);
+}
+
+.cta-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgba(0, 102, 255, 0.45);
+}
+
+.cta-primary {
+  background-color: #0066ff;
+  border: 1px solid transparent;
+  color: #ffffff;
+}
+
+.cta-primary:hover {
+  background-color: #0052cc;
+}
+
+.cta-secondary {
+  background-color: transparent;
+  border: 1px solid #0066ff;
+  color: #0066ff;
+}
+
+.cta-secondary:hover {
+  background-color: #eff6ff;
+}
+
+.cta-sm {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.95rem;
+}
+
+.cta-md {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+}
